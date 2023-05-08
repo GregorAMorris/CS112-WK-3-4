@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class TaxiCompany  
 {
-    private int bookingId;
+    private static int bookingId;
     // The vehicles operated by the company.
     private List<Vehicle> vehicles;
     // The associations between vehicles and the passengers
@@ -43,6 +43,10 @@ public class TaxiCompany
         else {
             return false;
         }
+    }
+
+    public static int getBookingId(){
+        return bookingId;
     }
     
     /**

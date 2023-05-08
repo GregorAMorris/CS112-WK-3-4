@@ -9,7 +9,7 @@ public class Passenger
 {
     private Location pickup;
     private Location destination;
-    private int currentBooking;
+    private static int currentBooking;
 
     /**
      * Constructor for objects of class Passenger
@@ -47,6 +47,10 @@ public class Passenger
     public Location getPickupLocation()
     {
         return pickup;
+    }
+    public static int getID()
+    {
+        return currentBooking;
     }
     
     /**
